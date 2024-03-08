@@ -1,6 +1,9 @@
-<input
-  type="text"
-  class="form-control"
-  placeholder="Buscar gifs!"
-  (keyup.enter)="searchTag()"
-  #tagInput>
+<div class="d-flex justify-content-between w-100">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Buscar gifs!"
+    (keyup.enter)="searchTag()"
+    #tagInput>
+  <button class="btn btn-dark" (click)="searchTag()"  type="submit">Buscar</button>
+</div>

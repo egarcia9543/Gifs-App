@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'atom-button',
@@ -8,5 +8,9 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() buttonPlaceholder: string = '';
   @Input() buttonClass: string = '';
+  @Output() buttonClicked = new EventEmitter();
 
+  emitButtonClicked(tag:string) {
+    this.buttonClicked.emit(tag);
+  }
 }

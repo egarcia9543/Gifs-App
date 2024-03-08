@@ -1,9 +1,13 @@
-<div class="row">
-  <div class="col-md-3 col-sm-6">
-    <div class="text-center card bg-dark mb-2 mt-2">
-
+<div class="d-flex flex-wrap justify-content-center">
+  <div *ngFor="let gif of gifs" class="col-md-3 col-sm-6 card__item m-4">
+    <div class="text-center card bg-dark card__item">
+      <img
+        [src]="gif.images.original.url"
+        class="card-img-top"
+        [alt]="gif.title"
+      >
       <div class="card-body text-white">
-        <p class="card-text">Hola mundo</p>
+        <p class="card-text">{{gif.title}}</p>
       </div>
     </div>
   </div>

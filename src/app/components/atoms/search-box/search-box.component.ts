@@ -8,6 +8,7 @@ import { GifsService } from '../../../services/gifs.service';
 })
 export class SearchBoxComponent {
   @ViewChild('tagInput') tagInput!: ElementRef<HTMLInputElement>
+  @ViewChild('tagsHistory') tagsHistory!: ElementRef<HTMLButtonElement>
 
   constructor(private gifsService: GifsService) { }
 

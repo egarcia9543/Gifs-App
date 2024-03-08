@@ -9,7 +9,9 @@
   <div class="list-group list-reset">
     <atom-button *ngFor="let tag of tags"
     [buttonPlaceholder]="tag | titlecase"
-    [buttonClass]="staticMenuItemClass">
+    [buttonClass]="staticMenuItemClass"
+    (buttonClicked)="searchTag(tag)"
+    >
     </atom-button>
   </div>
 </div>
