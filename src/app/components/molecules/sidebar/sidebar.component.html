@@ -1,0 +1,15 @@
+<div class="side_menu bg-dark p-3" >
+  <atom-title
+    [titleText]="sideMenuTitle"
+    [titleClass]="'text-light '">
+  </atom-title>
+
+  <hr class="text-white">
+
+  <div class="list-group list-reset">
+    <atom-button *ngFor="let tag of tags"
+    [buttonPlaceholder]="tag | titlecase"
+    [buttonClass]="staticMenuItemClass">
+    </atom-button>
+  </div>
+</div>
