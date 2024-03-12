@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { AtomsModule } from '../components/atoms/atoms.module';
 import { MoleculesModule } from '../components/molecules/molecules.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -13,7 +14,8 @@ import { MoleculesModule } from '../components/molecules/molecules.module';
   imports: [
     CommonModule,
     AtomsModule,
-    MoleculesModule
+    MoleculesModule,
+    SharedModule
   ],
   exports: [
     HomeComponent

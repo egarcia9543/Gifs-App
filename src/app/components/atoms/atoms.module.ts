@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { TitleComponent } from './title/title.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
+import { GifsCardComponent } from './gifs-card/gifs-card.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -10,15 +12,18 @@ import { SearchBoxComponent } from './search-box/search-box.component';
   declarations: [
     ButtonComponent,
     TitleComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    GifsCardComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     ButtonComponent,
     TitleComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    GifsCardComponent
   ]
 })
 export class AtomsModule { }

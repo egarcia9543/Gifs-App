@@ -1,0 +1,13 @@
+<div class="d-flex justify-content-center h-100 ">
+  <img
+    [src]="url"
+    class="card-img-top result__img animate__animated animate__fadeIn"
+    (load)="onLoad()"
+    [ngStyle]="{'display': isLoaded ? 'block' : 'none'}"
+  >
+
+  <img
+  *ngIf="!isLoaded"
+    src="assets/icons/ball-triangle.svg"
+  >
+</div>
